@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realiza tu pedido</title>
+    <link rel="shortcut icon" href="./imagenes/logo2_1.png" width="100px">
+</head>
+<body>
+    <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\logo1.png" alt="logo pasteleria" width="150px">
+
+    <h1>Realiza tu pedido</h1>
+
+    <form action="pedido.js">
+        <label for="nombre">Escribe tu nombre: </label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre">
+        
+        <br><br>
+
+        <label for="apellido">Escribe tu apellido: </label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="apellido">
+
+        <br><br>
+        
+        <label for="correo">Escribe tu correo electrónico: </label><br>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com">
+        
+        <br><br>
+
+        <label for="tel1">Escribe tu número de teléfono: </label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10">
+        
+        <br><br>
+
+        <label for="direccion">Escribe tu dirección: </label><br>
+        <input type="text" id="direccion" name="direccion" placeholder="calle, número, colonia y referencias">
+        <br>
+        
+        <p>Selecciona el tamaño de tu pastel</p>
+        <input type="radio" id="small" name="tamaños" value="Chico">
+        <label for="small">Chico</label><br>
+        <input type="radio" id="medium" name="tamaños" value="Mediano">
+        <label for="medium">Mediano</label><br>
+        <input type="radio" id="big" name="tamaños" value="Grande">
+        <label for="big">Grande</label><br>
+        <input type="radio" id="extraBig" name="tamaños" value="Familiar">
+        <label for="extraBig">Familiar</label>
+
+        <br>
+
+        <p>Selecciona algún pastel de la casa</p>
+        <input type="checkbox" id="seleccion1" name="seleccion1" value="naranja">
+        <label for="seleccion1">Pan de naranja</label>
+        <input type="number" id="naranjaCuantos" name="naranjaCuantos" placeholder="Escribe una cantidad">
+        <br>
+    
+        <input type="checkbox" id="seleccion2" name="seleccion2" value="chocolate">
+        <label for="seleccion2">Pan de chispas de chocolate</label>
+        <input type="number" id="chocolateCuantos" name="chocolateCuantos" placeholder="Escribe una cantidad">
+        <br>
+
+        <input type="checkbox" id="seleccion3" name="seleccion3" value="zanahoria">
+        <label for="seleccion3">Pan de nuez con zanahoria</label>
+        <input type="number" id="zanahoriaCuantos" name="zanahoriaCuantos" placeholder="Escribe una cantidad">
+    </form>
+    <form action="pedido.js">
+
+        <!-- Pedido personalizado-->
+        <h2>Personaliza tu pastel ideal</h2>
+        <input type="checkbox" id="seleccion4" name="seleccion4" value="personalizar">
+        <label for="seleccion4">Pastel personalizado</label>
+        <input type="number" id="personalizadoCuantos" name="personalizadoCuantos" placeholder="Escribe una cantidad">
+
+        <p>Selecciona el tamaño de tu pastel</p>
+        <input type="radio" id="small" name="tamaños" value="Chico">
+        <label for="small">Chico</label><br>
+        <input type="radio" id="medium" name="tamaños" value="Mediano">
+        <label for="medium">Mediano</label><br>
+        <input type="radio" id="big" name="tamaños" value="Grande">
+        <label for="big">Grande</label><br>
+        <input type="radio" id="extraBig" name="tamaños" value="Familiar">
+        <label for="extraBig">Familiar</label>
+        <br><br>
+        
+        <label for="pan">Elige el sabor de tu pan favorito</label><br>
+        <input list="pan">
+        <datalist id="pan">
+            <option value="Vainilla">
+            <option value="Chocolate">
+            <option value="Naranja">
+            <option value="Fresa">
+        </datalist>
+        <br><br>
+
+        <label for="ingrediente">Elige el ingrediente secreto de tu pastel</label><br>
+        <input list="ingrediente">
+        <datalist id="ingrediente">
+            <option value="Nueces">
+            <option value="Trosos de chocolate">
+            <option value="Fresas frescas">
+            <option value="Zanahoria Rayada">
+            <option value="Almendras">
+            <option value="Arándanos">
+            <option value="Pasas">
+            <option value="Chispas de sabores">
+        </datalist>
+        <br><br>
+
+        <label for="ingrediente">Elige el segundo ingrediente secreto (opcional +$25pesos)</label><br>
+        <input list="ingrediente2">
+        <datalist id="ingrediente2">
+            <option value="Nueces">
+            <option value="Trosos de chocolate">
+            <option value="Fresas frescas">
+            <option value="Zanahoria Rayada">
+            <option value="Almendras">
+            <option value="Arándanos">
+            <option value="Pasas">
+            <option value="Chispas de sabores">
+        </datalist>
+        <br><br>
+
+        <label for="cubierta">Selecciona tu cubierta preferida</label><br>
+        <input list="cubierta">
+        <datalist id="cubierta">
+            <option value="Azúcar Glass espolvoreado">
+            <option value="Glaseado de limón">
+            <option value="Glaseado de guayaba">
+            <option value="Glaseado de fresa">
+            <option value="Mousse de chocolate">
+            <option value="Mousse de chocolate">
+            <option value="Sin cubierta">
+        </datalist>
+
+        <br>
+
+        <p>Selecciona 2 adornos</p>
+        <input type="checkbox" id="seleccion1" name="seleccion1" value="naranja">
+        <label for="seleccion1">Rebanadas de naranja</label>
+        <br>
+    
+        <input type="checkbox" id="seleccion2" name="seleccion2" value="chocolate">
+        <label for="seleccion2">Chispas de chocolate</label>
+        <br>
+
+        <input type="checkbox" id="seleccion3" name="seleccion3" value="limon">
+        <label for="seleccion3">Rebanadas de limón</label>
+        <br>
+        <input type="checkbox" id="seleccion3" name="seleccion3" value="fresa">
+        <label for="seleccion3">Rebanadas de fresa</label>
+        <br>
+
+        <input type="checkbox" id="seleccion3" name="seleccion3" value="chispas">
+        <label for="seleccion3">Chispas de sabores</label>
+
+        <br><br>
+        
+        <input type="reset">
+        <a href="./pagos.html">
+        <input type="button" id="pagar" name="pagar" value="Ir al pago">
+        </a>
+    
+        <br><br>
+
+    </form>
+
+    <p>NOTA: Realiza tu pedido con al menos 3 días de anticipación</p>
+
+    <hr>
+
+    <h2>Sugerencias para ti</h2>
+    <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\pastel de naranja.jpeg" alt="pastel de naranja" width="350px">
+    <p>Pan de naranja</p>
+    <p>$179 pesos</p>
+    <br>
+
+    <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\pastel de chispas.jpeg" alt="pastel de naranja" width="350px">
+    <p>Pan de chispas de chocolate</p>
+    <p>$199 pesos</p>
+    <br>
+
+    <h2>Los más populares</h2>
+    <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\pastel de zanahoria y nuez.jpeg" alt="pastel de nuez con zanahoria" width="350px">
+    <p>Pan de nuez con zanahoria</p>
+    <p>$199 pesos</p>
+
+    <br><br>
+
+    <h4>2022 Todos los derechos reservados Pastel Delicia</h4>
+    <a href="./terminosycondiciones.html" target="_blank">Terminos y condiciones</a>
+    
+    <br><br>
+
+</body>
+</html>

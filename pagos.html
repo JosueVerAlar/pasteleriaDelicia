@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Delicia Pagos</title>
+    <link rel="shortcut icon" href="./imagenes/logo2_1.png" width="100px"> 
+</head>
+
+    <body>
+        <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\logo1.png" alt="logo pasteleria" width="150px">
+
+        <h1>Pago Seguro</h1>
+
+        <form action="pedido.js">
+            <label for="nomTarjeta">Nombre del titular</label><br>
+            <input type="text" id="nomTarjeta" name="nomTarjeta">
+            <br><br>
+
+            <label for="numTarjeta">Número de tarjeta</label><br>
+            <input type="number" name="numTarjeta" id="numTarjeta" maxlength="16">
+            <br><br>
+
+            <label for="cvv">CVV</label><br>
+            <input type="number" name="cvv" id="cvv" maxlength="3">
+            <br><br>
+
+            <label for="fecha">Fecha de expiración</label><br>
+            <input type="month" id="fecha" name="fecha">
+            <br><br>
+
+            <input type="reset">
+    
+            <a href="./confirmacionpago.html">
+            <input type="button" id="hacerPago" name="hacerPago" value="Realizar pago">
+            </a>
+            
+            <br><br>
+
+        </form>
+    </body>
+</html>

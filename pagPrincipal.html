@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Delicia</title>
+    <link rel="shortcut icon" href="./imagenes/logo2_1.png" width="100px"> 
+</head>
+
+    <body>
+        <!-- Initial Headings -->
+        <div class="main-header">
+            <div class="container main-header-inner">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-2 hide-stick-mobile">
+                        <div class="logo" style="opacity: 1;">
+                            <a href="/"><img src="imagenes/logo1.png" alt="logo pasteleria" width="150px"></a>
+                        </div>
+                    </div>
+                    <!-- Search -->
+                    <div id="form-search" class="form-search">
+                        <form>
+                            <input id="searchString" type="text" placeholder="Buscar..." autocomplete="off">
+                            <button class="btn-search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!-- Main-links-navigation -->
+                    <div class="col-sm-10 col-md-10 col-lg-7 main-menu-wapper">
+                        <a href="#" class="mobile-navigation">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <nav id="menu" class="menu" style="opacity: 1;">
+                            <ul class="navigation">
+                                <li class="menu-item ">
+                                    <a href="./hacerPedido.html">Hacer pedido</a>
+                                </li>
+                                <li>
+                                    <a href="#contacto" class="anchor-scroll">Contacto</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-2 col-md-3">
+                        <ul class="menu-header">
+                                <li>
+                                    <a href="#" id="myAccount">
+                                        <i class="fa fa-user" style="color: #b12e2e;"></i> Mi cuenta
+                                    </a>
+                                </li>
+                        </ul>
+                        <!-- Icon search -->
+                        <div class="icon-search">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <figure>
+            <img src="./imagenes/pastel de zanahoria y nuez 2.jpeg" alt="banner" width=device-width, initial-scale=1.0">
+        </figure>
+
+        <div>
+            <h2>Sugerencias</h2>
+            <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\pastel de naranja.jpeg" alt="pastel de naranja" width="350px">
+            <p>Pan de naranja</p>
+            <p>$179 pesos</p>
+            <br>
+    
+            <img src="D:\Documentos\Launch X\4. FrontEnd-JVA\3. Pasteleria\imagenes\pastel de chispas.jpeg" alt="pastel de naranja" width="350px">
+            <p>Pan de chispas de chocolate</p>
+            <p>$199 pesos</p>
+            <br><br>
+        </div>
+
+        <hr>
+        <h2>Contacto</h2>
+        <h3>Escríbenos y nos pondremos en contacto contigo</h3>
+        <br>
+
+        <div class="social-network">
+            <span>SÍGUENOS</span>
+            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <br>
+
+        <p>Telefono: 55 6182 8247</p>
+        <p>Correo: contacto@pasteldelicia.com</p>
+        <p>Dirección: Av. Homero 342, Polanco, Polanco IV Secc, Miguel Hidalgo, 11550 Ciudad de México, CDMX</p>
+        <br>
+
+        <form action="pedido.js">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="nombre">
+            
+            <br><br>
+            <label for="correo">Email</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com">
+            
+            <br><br>
+    
+            <label for="comment">Comentarios </label><br>        
+            <textarea id="ContactComment" name="ContactComment" data-msg="Requerido" rows="5" style="resize: none;"></textarea>
+
+            <br><br>
+            
+            <input type="button" id="comments" name="comments" value="Enviar comentarios" onclick="alert('Mensaje enviado');">
+        </form>
+        <br>
+        
+        <h4>2022 Todos los derechos reservados Pastel Delicia</h4>
+        <a href="./terminosycondiciones.html" target="_blank">Terminos y condiciones</a>
+        
+        <br><br>
+
+    </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recepción de pedidos</title>
+        <link rel="shortcut icon" href="./imagenes/logo2_1.png" width="100px">
+    </head>
+    <body>
+        <img src="./imagenes/logo1.png" alt="logo pasteleria" width="150px">
+
+
+        <div class="main-header">
+            <div class="container main-header-inner">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-2 hide-stick-mobile">
+                        <div class="logo" style="opacity: 1;">
+                        </div>
+                    </div>
+                    <!-- Main-links-navigation -->
+                    <div class="main-menu">
+                        <a href="#" class="mobile-navigation">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <nav id="menu" class="menu" style="opacity: 1;">
+                            <ul class="navigation">
+                                <li class="menu-item ">
+                                    <a href="./recepciónPagos.html">Ingresos recibidos</a>
+                                </li>
+                            </ul>
+                            <ul class="navigation">
+                                <li class="menu-item ">
+                                    <a href="./cancelaciones.html">Cancelaciones</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-2 col-md-3">
+                        <ul class="menu-header">
+                                <li>
+                                    <a href="#" id="myAccount">
+                                        <i class="fa fa-user" style="color: #ffffff;"></i> Mi cuenta
+                                    </a>
+                                </li>
+                        </ul>
+                        <!-- Icon search -->
+                        <div class="icon-search">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Recepción de pedidos</h1>
+        <hr>
+
+        <h2>Pedidos (Visión general)</h2>
+        <!-- Pedidos recibidos (general) -->
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Tamaño de pastel</th>
+                <th>Tipo de pastel</th>
+                <th># Pedido</th>
+                <th>Estatus</th>
+                <th>Opciones</th>
+            </tr>
+            <tr>
+                <td>Alfredo López</td>
+                <td>alfredolopez@gmail.com</td>
+                <td>55 6172 7839</td>
+                <td>Calle londres, 231, Colonia del Valle</td>
+                <td>Grande</td>
+                <td>Pan de naranja</td>
+                <td>2039</td>
+                <td>En preparación</td>
+                <td>
+                    <a href="">
+                        <input type="button" id="cancelador" name="cancelador" value="Cancelar pedido">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Alfredo Miranda</td>
+                <td>alfredomiranda@gmail.com</td>
+                <td>55 6172 8071</td>
+                <td>Calle Chemax, 123, Churubusco</td>
+                <td>Mediano</td>
+                <td>Pan de nuez con zanahoria</td>
+                <td>2347</td>
+                <td>En preparación</td>
+                <td>
+                    <a href="">
+                        <input type="button" id="cancelador" name="cancelador" value="Cancelar pedido">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <hr><br>
+
+        <!-- Pedidos personalizados-->
+        <h2>Pedidos personalizados</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Tamaño de pastel</th>
+                <th>Sabor de pan</th>
+                <th>Ingrediente secreto</th>
+                <th>2° Ingrediente secreto (opcional)</th>
+                <th>Cubierta</th>
+                <th>Adornos</th>
+                <th>Estatus</th>
+                <th>Opciones</th>
+            </tr>
+            <tr>
+                <td>Ricardo Sánchez</td>
+                <td>alfredolopez@gmail.com</td>
+                <td>55 6172 7839</td>
+                <td>Calle londres, 231, Colonia del Valle</td>
+                <td>Grande</td>
+                <td>Chocolate</td>
+                <td>Arándanos</td>
+                <td>Nueces</td>
+                <td>Glaseado de fresa</td>
+                <td>Chispas de chocolate, rebanadas de fresa</td>
+                <td>En proceso de entrega</td>
+                <td>
+                    <a href="">
+                        <input type="button" id="cancelador" name="cancelador" value="Cancelar pedido">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Luis Pérez</td>
+                <td>perezL@gmail.com</td>
+                <td>55 5462 6839</td>
+                <td>Calle Sinanche, 56732, Colonia San Ángel</td>
+                <td>Grande</td>
+                <td>Naranja</td>
+                <td>Zanahoria rayada</td>
+                <td>Almendras</td>
+                <td>Mousse de chocolate</td>
+                <td>Rebanadas de naranja, chispas de sabores</td>
+                <td>Entregado</td>
+                <td>
+                    <a href="">
+                        <input type="button" id="cancelador" name="cancelador" value="Cancelar pedido">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <hr><br>
+
+        <h4>2022 Todos los derechos reservados Pastel Delicia</h4>
+        <a href="./terminosycondiciones.html" target="_blank">Terminos y condiciones</a>
+        
+        <br><br>
+    </body>
+</html>
